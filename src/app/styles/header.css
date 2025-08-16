@@ -1,0 +1,73 @@
+/* src/styles/header.css */
+
+/* Full-bleed header bar */
+header.site-header {
+  position: sticky;
+  top: 0;             /* stick to top */
+  z-index: 50;        /* stays above other content */
+  background-color: #1e6aa1; 
+  color: #fff;
+  padding: 0.75rem 0;
+
+  /* optional: subtle shadow for separation */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Centered content */
+header.site-header .container {
+  max-width: 72rem;  /* same as Tailwind max-w-6xl */
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand (logo + wordmark) */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+/* Logo sizing & subtle background pill */
+.brand .logo {
+  background: rgba(255,255,255,0.12);
+  /* padding: 0.4rem; */
+  border-radius: 0.75rem;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.10);
+  transition: transform .15s ease;
+}
+
+.brand:hover .logo {
+  transform: translateY(-1px);
+}
+
+/* Wordmark text */
+.logo-text {
+  font-weight: 700;
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+/* Navigation links */
+header.site-header nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;          /* space between icon and text */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity .2s, background-color .2s;
+}
+
+header.site-header nav a:hover {
+  opacity: 0.9;
+  background: rgba(255,255,255,0.1);
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.4rem;
+}
+

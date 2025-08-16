@@ -34,7 +34,7 @@ export default function ContactForm() {
     <form onSubmit={onSubmit} className="mt-6 grid gap-4">
       <input
         name="name"
-        placeholder="Your name"
+        placeholder="Ihr Name"
         required
         className="rounded-xl border px-4 py-3"
         value={form.name}
@@ -43,7 +43,7 @@ export default function ContactForm() {
       <input
         name="email"
         type="email"
-        placeholder="Email"
+        placeholder="E-Mail-Adresse"
         required
         className="rounded-xl border px-4 py-3"
         value={form.email}
@@ -51,7 +51,7 @@ export default function ContactForm() {
       />
       <textarea
         name="message"
-        placeholder="What do you need moved?"
+        placeholder="Was möchten Sie transportieren lassen?"
         rows={5}
         className="rounded-xl border px-4 py-3"
         value={form.message}
@@ -62,14 +62,14 @@ export default function ContactForm() {
         disabled={status === 'sending'}
         className="rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white hover:opacity-90 disabled:opacity-60"
       >
-        {status === 'sending' ? 'Sending…' : 'Send'}
+        {status === 'sending' ? 'Wird gesendet…' : 'Absenden'}
       </button>
 
       {status === 'ok' && (
-        <p className="text-green-600">Thanks! We’ll be in touch shortly.</p>
+        <p className="text-green-600">Vielen Dank! Wir melden uns in Kürze bei Ihnen.</p>
       )}
       {status === 'error' && (
-        <p className="text-red-600">Something went wrong. Please try again.</p>
+        <p className="text-red-600">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.</p>
       )}
     </form>
   );
