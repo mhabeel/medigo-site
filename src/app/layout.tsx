@@ -6,12 +6,16 @@ export const metadata: Metadata = {
   title: 'MediGo — Medical Transport',
   description:
     'Quick, safe medical transport for medications and sensitive supplies.',
-  icons: [{ rel: 'icon', url: '/logo.png' }],
+  icons: {
+    icon: '/logo.svg',             // main favicon
+    shortcut: '/favicon.ico',         // fallback for older browsers
+    apple: '/apple-touch-icon.png',   // iOS homescreen icon (optional)
+  },
   openGraph: {
     title: 'MediGo',
     description:
       'Quick, safe medical transport for medications and sensitive supplies.',
-    url: 'https://your-domain.com',
+    url: 'https://medigo-transport.com',
     siteName: 'MediGo',
     images: [{ url: '/og.jpg', width: 1200, height: 630 }],
   },
