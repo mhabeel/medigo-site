@@ -36,7 +36,7 @@ export default function ContactForm() {
         name="name"
         placeholder="Ihr Name"
         required
-        className="rounded-xl border px-4 py-3"
+        className="rounded-xl border px-4 py-3 placeholder-slate-500"
         value={form.name}
         onChange={(e) => setForm({ ...form, name: e.target.value })}
       />
@@ -45,7 +45,7 @@ export default function ContactForm() {
         type="email"
         placeholder="E-Mail-Adresse"
         required
-        className="rounded-xl border px-4 py-3"
+        className="rounded-xl border px-4 py-3 placeholder-slate-500"
         value={form.email}
         onChange={(e) => setForm({ ...form, email: e.target.value })}
       />
@@ -53,7 +53,7 @@ export default function ContactForm() {
         name="message"
         placeholder="Was möchten Sie transportieren lassen?"
         rows={5}
-        className="rounded-xl border px-4 py-3"
+        className="rounded-xl border px-4 py-3 placeholder-slate-500"
         value={form.message}
         onChange={(e) => setForm({ ...form, message: e.target.value })}
       />
