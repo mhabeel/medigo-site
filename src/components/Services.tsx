@@ -10,7 +10,7 @@ export default function Services() {
       <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-3 gap-6">
         {services.map(([title, text]) => (
           <article key={title} className="rounded-2xl bg-white p-6 shadow-sm">
-            <h3 className="font-semibold text-lg">{title}</h3>
+            <h3 className="font-semibold text-lg text-slate-600">{title}</h3>
             <p className="mt-2 text-slate-600">{text}</p>
           </article>
         ))}
