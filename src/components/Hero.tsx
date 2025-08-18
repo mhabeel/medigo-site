@@ -34,7 +34,7 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="inline-block rounded-2xl border border-white px-6 py-3 font-semibold hover:bg-white hover:text-brand transition"
+            className="inline-block rounded-2xl border border-white px-6 py-3 font-semibold hover:bg-white hover:text-sButton transition"
           >
             Unsere Leistungen
           </a>

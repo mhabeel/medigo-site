@@ -9,7 +9,7 @@ export default function Services() {
     <section id="services" className="bg-slate-50">
       <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-3 gap-6">
         {services.map(([title, text]) => (
-          <article key={title} className="rounded-2xl bg-white p-6 shadow-sm">
+          <article key={title} className="rounded-2xl bg-sButton-l p-6 shadow-sm transition transform hover:scale-105 hover:shadow-md">
             <h3 className="font-semibold text-lg text-slate-600">{title}</h3>
             <p className="mt-2 text-slate-600">{text}</p>
           </article>

@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --sButton: #1e6aa1;
+   --sButton-l: hsl(205, 63%, 36%, 20%);
 }
 
 @theme inline {
@@ -10,6 +12,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-sButton: var(--sButton);
+  --color-sButton-l: var(--sButton-l);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +26,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace, Helvetica, sans-serif;
 }
 
