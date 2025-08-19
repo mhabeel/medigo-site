@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       },
       body: JSON.stringify({
         from: "MediGo <contact@medigo-transport.com>",
-        to: ['bashar.habil@gmail.com'],
+        to: ['b.habil@medigo-transport.com'],
         subject: 'New MediGo inquiry',
         text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
       }),
